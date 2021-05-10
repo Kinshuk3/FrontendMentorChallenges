@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+*:before{
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    background-color: hsl(0, 0%, 95%);
+}
+.car-grid h2{
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+}
+
+.car-grid p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    line-height: 180%;
+}
+
+.car-grid > div{
+    flex: 1;   
+    text-decoration: none;
+    text-align: left; 
+    padding: 20px 50px;
+}
+.car-grid{
+    display: flex;
+    padding: 60px 250px;
+    margin-top: 80px;
+    width: 130vh;
+    height: 70vh;
+}
+.learn-more{
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: #fff;
+    border: 2px solid white;
+    border-radius: 50px;
+    transition-duration: 0.4s;
+    position: absolute;
+    top: 500px;
+    box-sizing: border-box;
+    padding: 1em 3em;
+    width: max-content;
+}
+
+.learn-more:hover{
+    background-color: rgba(0, 0, 0, 0.01);
+    
+}
+
+#sed-btn{
+    color: hsl(31, 77%, 52%);
+}
+
+#suv-btn{
+   color:  hsl(184, 100%, 22%);
+}
+
+#lux-btn{
+   color:  hsl(179, 100%, 13%);
+}
+
+#sed-btn:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+#suv-btn:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+#lux-btn:hover{
+    color: #fff;
+    cursor: pointer;
+}
+.sedan-component{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 1px 1px 10px;
+}
+
+.suv-component{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury-component{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 1px 10px 10px 1px;
+}
+
+@media (max-width: 375px) {
+    .car-grid{
+        display: flex;
+        flex-direction: column;
+        width:350px;
+    }
+
+    body{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .sedan-component{
+        border-radius: 10px 10px 0px 0px;  
+    }
+
+    .suv-component{
+        border-radius: 0px;
+    }
+
+    .luxury-component{
+        border-radius: 0px 0px 10px 10px;
+    }
+
+    .sedan-component > button{
+        position: relative;
+        top: auto;
+    }
+
+    .suv-component > button{
+        top: auto
+    }
+
+    .luxury-component > button{
+        position: relative;
+        top: auto;
+    }
+  }
